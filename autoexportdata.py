@@ -11,7 +11,7 @@ shutil.copyfile(original, target)
 
 #schedule.every().day.at("00:00").do(adddatatoexcel.exportdata)
 start = datetime.datetime.strptime("2020-03-20", "%Y-%m-%d")
-end = datetime.datetime.strptime("2020-03-25", "%Y-%m-%d")
+end = datetime.datetime.strptime("2020-03-27", "%Y-%m-%d")
 date_array = \
     (start + datetime.timedelta(days=x) for x in range(0, (end-start).days))
 for i in date_array:
