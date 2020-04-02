@@ -10,7 +10,7 @@ target = r'C:\Users\Admin\Desktop\Howtocode\Book1.xlsx'
 shutil.copyfile(original, target)
 
 #schedule.every().day.at("00:00").do(adddatatoexcel.exportdata)
-start = datetime.datetime.strptime("2020-03-18", "%Y-%m-%d")
+start = datetime.datetime.strptime("2020-03-20", "%Y-%m-%d")
 end = datetime.datetime.strptime("2020-04-01", "%Y-%m-%d")
 date_array = \
     (start + datetime.timedelta(days=x) for x in range(0, (end-start).days))
